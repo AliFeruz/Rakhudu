@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Montserrat:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body,
+#root,
+.app {
+    height: auto;
+    width: 100%;
+    font-family: "DM Sans", sans-serif;
+    @apply text-zinc-400;
+};
+
+@layer components{
+    .flex-between {
+        @apply flex items-center justify-between;
+    }
+};
+
+@layer components{
+    .overlaystyles{
+        @apply p-5 absolute z-30 flex h-[380px] w-[450px] flex-col items-center justify-center whitespace-normal bg-primary-500 text-center text-white opacity-0 transition duration-500 hover:opacity-90;
+    }
+    .input{
+        @apply mb-5 w-full rounded-lg bg-zinc-400 px-5 py-3 placeholder:text-white;
+    }
+    .submitbutton{
+        @apply mt-5 rounded-lg bg-zinc-500 px-20 py-3 text-zinc-100 transition duration-500 hover:text-white;
+    }
+}
+

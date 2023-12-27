@@ -23,7 +23,7 @@ body,
 
 @layer components{
     .overlaystyles{
-        @apply p-5 absolute z-30 flex h-[380px] w-[450px] flex-col items-center justify-center whitespace-normal bg-primary-500 text-center text-white opacity-0 transition duration-500 hover:opacity-90;
+        @apply p-5 absolute z-30 flex h-[380px] w-[450px] flex-col items-center justify-center whitespace-normal bg-zinc-500 text-center text-white opacity-0 transition duration-500 hover:opacity-90;
     }
     .input{
         @apply mb-5 w-full rounded-lg bg-zinc-400 px-5 py-3 placeholder:text-white;

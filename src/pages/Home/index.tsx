@@ -10,13 +10,13 @@ type Props = {
 const Home = ({setSelectedPage}: Props) => {
  
   return (
-    <section id="aboutme" className="mx-auto mt-16 h-auto w-5/6 py-20">
+    <section id="aboutme" className="mx-auto mt-32 h-auto w-5/6 py-20">
       <motion.div className="md:flex mx-auto w-5/6 items-center justify-center"
                       onViewportEnter={() => setSelectedPage(SelectedPage.AboutMe)}>
-            <div className="justify-between items-center gap-20 mt-16 md:mt-38 md:flex">
+            <div className="justify-between items-center gap-20 mt-16 md:mt-16 md:flex">
                 <img src={hero} alt="image" 
-                className="h-[400px] w-[400px] object-cover border-2 border-zinc-400 rounded-[2rem]"/>
-                <div className="mt-10">
+                className="h-[400px] w-[400px] md:h-[250px] md:w-[250px] object-cover border-2 border-zinc-400 rounded-full"/>
+                <div className="md:mt-10">
                     <motion.div
                      initial="hidden"
                      whileInView="visible"
@@ -37,17 +37,12 @@ const Home = ({setSelectedPage}: Props) => {
                        visible: { opacity: 1, x: 0 },}}
                        className="object-contain">
                         <p className="my-5 text-2xl">
-                Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
-                egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
-                fames vitae vitae quis. Quis amet vulputate tincidunt at in
-                nulla nec. Consequat sed facilisis dui sit egestas ultrices
-                tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
-                Felis orci diam odio.</p>
-                        <p className="text-2xl">
-                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                enim mattis odio in risus nunc.</p>
+                        I'm a young artist from Germany. I studied psychology,
+                        African studies and philosophy. I am currently interested in environmental 
+                        protection and the reuse of industrial products to reduce the 
+                        damage to nature as much as possible. 
+                        In my works I use both natural materials and human waste. 
+                        With my works I try to show my feelings about the world around me.</p>
                     </motion.div>
                 </div>
             </div>

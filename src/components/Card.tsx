@@ -7,7 +7,7 @@ type Props = {
 }
 
 const Card = ({item}: Props) => {
-  console.log(item)
+  
   
   return (
     <motion.div
@@ -19,12 +19,12 @@ const Card = ({item}: Props) => {
     variants={{
     hidden: { opacity: 0, x: 50 },
     visible: { opacity: 1, x: 0 },}}>
-      <div>
+      <div className='justify-center items-center'>
         <img src={item.image} alt="image" 
-        className="h-[400px] w-[400px] border-2 border-zinc-400 rounded-[2rem]"/>
+        className="h-[400px] w-[400px] object-cover border-4 border-zinc-400 rounded-[1.5rem]"/>
       </div>
     
-    <h3 className='font-semibold text-zinc-100'>{item.title}</h3>
+    <h3 className='font-bold text-zinc-200 text-2xl text-center'>{item.title}</h3>
     </motion.div>
   )
 }

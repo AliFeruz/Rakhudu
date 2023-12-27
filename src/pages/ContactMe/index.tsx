@@ -32,13 +32,11 @@ const ContactMe = ({setSelectedPage}: Props) => {
                           visible: { opacity: 1, x: 0 },
                         }}>
             <h1 className="basis-3/5 font-montserrat text-3xl font-bold">
-              <span className='text-primary-500'>JOIN NOW </span>
-              TO GET IN SHAPE 
+              <span className='text-primary-500'>CONTACT NOW </span>
+              TO KNOW MORE OF MY WORK 
             </h1>
-            <p className='my-5'>
-            Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-            sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
-            adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
+            <p className='my-5 text-2xl'>
+            Write me an email and i will respond you as soon as posible
             </p>
             </motion.div>
             <div className='mt-10 justify-between gap-8 md:flex'>
@@ -55,7 +53,7 @@ const ContactMe = ({setSelectedPage}: Props) => {
                     target='_blank'
                     onSubmit={onSubmit}
                     method='POST'
-                    action='https://formsubmit.co/el/fikete'>
+                    action='https://formsubmit.co/aliferuzcode@gmail.com'>
                 <input type="text"
                        className='input'
                        placeholder='NAME'
@@ -64,7 +62,7 @@ const ContactMe = ({setSelectedPage}: Props) => {
                         maxLength: 100,
                        })}/>
                 {errors.name && (
-                    <p className='mt-1 text-primary-500'>
+                    <p className='mt-1 text-zinc-200'>
                         {errors.name.type === 'required' && 'This field is required.'}
                         {errors.name.type === 'maxLength' && 'Max length is 100 char.'}
                     </p>
@@ -77,7 +75,7 @@ const ContactMe = ({setSelectedPage}: Props) => {
                         pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                        })}/>
                 {errors.email && (
-                    <p className='mt-1 text-primary-500'>
+                    <p className='mt-1 text-zinc-200'>
                         {errors.email.type === 'required' && 'This field is required.'}
                         {errors.email.type === 'pattern' && 'Invalid email address.'}
                     </p>
@@ -92,7 +90,7 @@ const ContactMe = ({setSelectedPage}: Props) => {
                         maxLength: 2000,
                        })}/>
                 {errors.message && (
-                    <p className='mt-1 text-primary-500'>
+                    <p className='mt-1 text-zinc-200'>
                         {errors.message.type === 'required' && 'This field is required.'}
                         {errors.message.type === 'maxLength' && 'Max length is 2000 char.'}
                     </p>

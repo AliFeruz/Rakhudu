@@ -20,8 +20,7 @@ const NavBar = ({isTopofpage, selectedPage, setSelectedPage}: Props) => {
         fixed top-0 z-30 w-full bg-zinc-800 py-8`}>
             <div className="flex-between mx-auto h-20 w-5/6">
                 <div className="flex-between w-full gap-16">
-                <h1 className="text-4xl leading-12 tracking-tighter bg-gradient-to-r 
-                from-primary-500 to-transparent text-transparent bg-clip-text">S.Marggraff</h1>
+                <h1 className="text-4xl text-primary-500">S.Marggraff</h1>
                 { isAboveMediumScreens ?(<div className="flex-between w-full">
                     <div className="flex-between text-3xl gap-8">
                        <Link page= "About Me"

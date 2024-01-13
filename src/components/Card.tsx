@@ -11,7 +11,7 @@ const Card = ({item}: Props) => {
   
   return (
     <motion.div
-    className='flex flex-col cursor-pointer p-5 gap-9'
+    className='flex flex-col cursor-pointer p-4 items-center justify-center rounded-lg bg-gradient-to-t from-emerald-300 to-emerald-50 gap-6'
     initial="hidden"
     whileInView="visible"
     viewport={{ once: true, amount: 0.5 }}
@@ -19,12 +19,12 @@ const Card = ({item}: Props) => {
     variants={{
     hidden: { opacity: 0, x: 50 },
     visible: { opacity: 1, x: 0 },}}>
-      <div className='justify-center items-center'>
+      <div className=' '>
         <img src={item.image} alt="image" 
-        className="h-[400px] w-[400px] object-cover border-4 border-zinc-400 rounded-[1.5rem]"/>
+        className="md:h-[400px] md:w-[400px] mt-2 h-[250px] w-[250px] object-cover border-4 border-emerald-400 rounded-[1.5rem]"/>
       </div>
     
-    <h3 className='font-bold text-zinc-200 text-2xl text-center'>{item.title}</h3>
+    <h3 className='font-bold text-emerald-900 text-2xl text-center'>{item.title}</h3>
     </motion.div>
   )
 }

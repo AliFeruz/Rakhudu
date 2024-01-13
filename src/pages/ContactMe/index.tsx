@@ -22,7 +22,7 @@ const ContactMe = ({setSelectedPage}: Props) => {
   return (
     <section id='contactme' className='mx-auto w-5/6 pt-24 pb-32'>
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.ContactMe)}>
-            <motion.div className='md:w-3/5'
+            <motion.div className='md:w-3/5 common-container'
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
@@ -32,14 +32,14 @@ const ContactMe = ({setSelectedPage}: Props) => {
                           visible: { opacity: 1, x: 0 },
                         }}>
             <h1 className="basis-3/5 font-montserrat text-3xl font-bold">
-              <span className='text-primary-500'>CONTACT NOW </span>
+              <span className='text-emerald-50'>CONTACT ME </span>
               TO KNOW MORE OF MY WORK 
             </h1>
             <p className='my-5 text-2xl'>
-            Write me an email and i will respond you as soon as posible
+            Write me an email and I will respond you as soon as posible
             </p>
             </motion.div>
-            <div className='mt-10 justify-between gap-8 md:flex'>
+            <div className='mt-5 justify-between gap-8 md:flex'>
                 <motion.div className='mt-10 basis-3/5 md:-0'
                             initial="hidden"
                             whileInView="visible"

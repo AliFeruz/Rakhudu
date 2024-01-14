@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import ContactMe from "./pages/ContactMe";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage}/>
       <Gallery setSelectedPage={setSelectedPage}/>
       <ContactMe setSelectedPage={setSelectedPage}/>
+      <Footer/>
     </main>
   )
 }

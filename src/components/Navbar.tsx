@@ -40,7 +40,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
         </div>
         {!isAboveMediumScreens && isMenuToggled && (
             <div className="fixed right-0 bottom-0 z-40 
-                 h-full w-[300px] bg-gradient-to-b from-green-500 via-green-700 to-indigo-900 drop-shadow-xl">
+                 h-full w-[300px] bg-gradient-to-b from-emerald-300 via-emerald-700 to-emerald-950 drop-shadow-xl">
             <div className="flex justify-end p-12">
                 <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
                 <XMarkIcon className="h-8 w-8 text-emerald-950"/>

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { SelectedPage } from '../../shared/types';
+import { FormEvent } from 'react';
 
 
 type Props = {
@@ -11,7 +12,7 @@ const ContactMe = ({setSelectedPage}: Props) => {
     const { trigger, register, formState: {errors} } = useForm();
 
 
-    const onSubmit = async (e: any) => {
+    const onSubmit = async (e: FormEvent) => {
         const isValid = await trigger();
         if(!isValid) {
             e.preventDefault();
@@ -32,7 +33,7 @@ const ContactMe = ({setSelectedPage}: Props) => {
                           visible: { opacity: 1, x: 0 },
                         }}>
             <h1 className="basis-3/5 font-montserrat text-3xl font-bold">
-              <span className='text-emerald-50'>CONTACT ME </span>
+              <span className='text-emerald-50'>CONTACT ME {''}</span>
               TO KNOW MORE OF MY WORK 
             </h1>
             <p className='my-5 text-2xl'>

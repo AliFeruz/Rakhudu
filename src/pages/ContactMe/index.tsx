@@ -37,7 +37,7 @@ const ContactMe = ({setSelectedPage}: Props) => {
               TO KNOW MORE OF MY WORK 
             </h1>
             <p className='my-5 text-2xl'>
-            Write me an email and I will respond you as soon as posible
+            Send me a message and I will get back to you as soon as possible.
             </p>
             </motion.div>
             <div className='mt-5 justify-between gap-8 md:flex'>

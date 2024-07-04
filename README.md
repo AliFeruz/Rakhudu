@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Rakhudu Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+I developed this portfolio website for Marggraff using a combination of modern web technologies, including React, TypeScript, Tailwind CSS, and Framer Motion. The website showcases Marggraff's projects and professional experience in a visually appealing and interactive manner.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **React:** Utilized React to build a dynamic and responsive user interface.
+- **TypeScript:** Employed TypeScript to enhance code quality and maintainability with static type checking.
+- **Tailwind CSS:** Leveraged Tailwind CSS for efficient and customizable styling.
+- **Framer Motion:** Integrated Framer Motion to add smooth animations and transitions, enhancing user experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- **React:** A JavaScript library for building user interfaces.
+- **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+- **Framer Motion:** A library for animations and gestures in React.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Highlights
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Dynamic Interface:** The use of React and TypeScript allowed for the creation of a highly dynamic and responsive user interface, ensuring smooth navigation and interaction.
+- **Custom Styling:** Tailwind CSS provided a streamlined approach to styling, enabling the creation of a unique and visually consistent design across the website.
+- **Interactive Animations:** Framer Motion was used to implement engaging animations and transitions, making the user experience more interactive and enjoyable.
+
+## Project Link
+
+You can view the live project [here](https://marggraff.vercel.app/).
+
+## Conclusion
+
+This portfolio website not only showcases Marggraff's professional work and projects but also demonstrates the effective use of modern web development technologies to create a polished and interactive online presence.
